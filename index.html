@@ -33,7 +33,7 @@
       <section id="main_content" class="inner">
         <h3>Welcome to GitHub Pages.</h3>
           <span itemscope="" itemref="rectangle" itemtype="http://growbutton.com/ns#button"> <span itemprop="url">http://yamitake.github.com/jquery.nicoru.js/</span> <span itemprop="title">yamitake's github page | jquery.nicoru.js</span> </span>
-
+          <div class="fb-like" data-href="http://yamitake.github.com/jquery.necoru.js/" data-send="true" data-width="450" data-show-faces="true"></div>
         <p>
           このプラグインは「ニコる」っぽいネコのボタンを表示する事ができるプラグインです。
           <br />
@@ -144,23 +144,35 @@ $ git checkout gh-pages
 
     <!-- 事前にAudioタグ読んどく -->
     <audio id="audio">
-      <source src="nya.mp3" />
+      <source src="http://koebu.s3.amazonaws.com/mp3/b/bf/bfe2/bfe2df4f2127f11e958c8a942c1455930fb78ad7.mp3" />
     </audio>
+    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=238970959482402";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="./necoru/jquery.necoru.js"></script>
     <script type="text/javascript">
       $(function() {
         $("#target").necoru();
+        //押されるとイベントを拾う事ができます。音を鳴らすなどしたい場合に最適です。baai
+        $("#target").bind("necoru-clicked", function() {
+          //にゃ〜って音声をならしたい。
+          console.log("にゃー");
+          document.getElementById("audio").play();
+        });
 
         //option指定
         $("#target2").necoru({
           caption : "(」・ω・)」うー！",
           done : "(／・ω・)／にゃー！"
-        });
-
-        //押されるとイベントを拾う事ができます。音を鳴らすなどしたい場合に最適です。baai
-        $("#target").bind("necoru-clicked", function() {
+        }).bind("necoru-clicked", function() {
           //にゃ〜って音声をならしたい。
           console.log("にゃー");
           document.getElementById("audio").play();
