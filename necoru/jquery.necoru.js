@@ -41,7 +41,7 @@ THE SOFTWARE.
     
     var r = this.each(function(){
       $(this).append(
-        '<a href="#" class="necorub-link " rel="like">' + 
+        '<a href="javascript:void(0)" class="necorub-link " rel="like">' + 
           '<span class="necorub-icon"></span>' + 
           '<span class="necorub-balloon">' + 
             '<span class="necorub-u"></span>' + 
