@@ -33,8 +33,7 @@ THE SOFTWARE.
       caption: "ネコる！" ,
       done: "ネコった！" ,
       failed: "失敗ニャ" ,
-      counter: Math.floor(Math.random() * 1000) ,
-      audio: true
+      counter: Math.floor(Math.random() * 1000)
     };
     
     
