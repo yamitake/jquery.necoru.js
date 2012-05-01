@@ -1,0 +1,175 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  /* Make inputs at least the height of their button counterpart */
+
+  /* Makes inputs behave like true block-level elements */
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.nicoru-button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  text-align: left;
+  cursor: default;
+}
+.nicoru-button.nicorub-loaded {
+  display: -moz-inline-block;
+  display: inline-block;
+}
+.nicoru-button .nicorub-link {
+  display: -moz-inline-block;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+.nicoru-button.nicorub-clicked .nicorub-link,
+.nicoru-button.nicorub-nicoried .nicorub-link {
+  cursor: default;
+}
+.nicoru-button .nicorub-icon {
+  display: -moz-inline-block;
+  display: inline-block;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 500ms;
+  -ms-transition-property: -ms-transform;
+  -ms-transition-duration: 500ms;
+  -o-transition-property: -o-transform;
+  -o-transition-duration: 500ms;
+  transition-property: transform;
+  transition-duration: 500ms;
+  width: 20px;
+  height: 20px;
+  margin: 0 4px 0 0;
+  background-image: url(./necoru_icon.png);
+  background-position: 0px 0;
+  background-repeat: no-repeat;
+}
+.nicoru-button.nicorub-error .nicorub-icon {
+  background-position: -80px 0;
+}
+.nicoru-button.nicorub-clicked .nicorub-icon,
+.nicoru-button.nicorub-nicoried .nicorub-icon {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.nicoru-button.nicorub-nicoried .nicorub-icon {
+  background-position: -20px 0;
+}
+.nicoru-button.nicorub-rotatefix.nicorub-clicked .nicorub-icon {
+  background-position: -40px 0;
+}
+.nicoru-button.nicorub-rotatefix.nicorub-nicoried .nicorub-icon {
+  background-position: -60px 0;
+}
+.nicoru-button .nicorub-balloon {
+  display: -moz-inline-block;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  background-color: white;
+  border: #888888 solid 1px;
+  height: 20px;
+  min-width: 22px;
+  vertical-align: top;
+  font: normal normal normal 11px/20px Helvetica, Arial, sans-serif;
+  color: #333333;
+  text-align: center;
+}
+.nicoru-button .nicorub-balloon .nicorub-u,
+.nicoru-button .nicorub-balloon .nicorub-d {
+  position: absolute;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  left: -4px;
+  top: 50%;
+  margin: -4px 0 0 0;
+  border: 4px transparent solid;
+  border-right-color: #888888;
+  border-left: 0;
+}
+.nicoru-button .nicorub-balloon .nicorub-d {
+  left: -3px;
+  border-right-color: white;
+}
+.nicoru-button .nicorub-messages {
+  vertical-align: baseline;
+  margin: 0 4px 0;
+}
+.nicoru-button .nicorub-messages span {
+  display: none;
+}
+.nicoru-button .nicorub-messages span.nicorub-counter {
+  display: inline;
+}
+.nicoru-button .nicorub-link:hover + .nicorub-balloon .nicorub-messages span,
+.nicoru-button .nicorub-link:hover .nicorub-messages span {
+  display: none;
+}
+.nicoru-button .nicorub-link:hover + .nicorub-balloon .nicorub-messages span.nicorub-caption,
+.nicoru-button .nicorub-link:hover .nicorub-messages span.nicorub-caption {
+  display: inline;
+}
+.nicoru-button.nicorub-error .nicorub-messages span {
+  display: none;
+}
+.nicoru-button.nicorub-error .nicorub-messages span.nicorub-failed {
+  display: inline;
+}
+.nicoru-button.nicorub-error .nicorub-link:hover + .nicorub-balloon .nicorub-messages span,
+.nicoru-button.nicorub-error .nicorub-link:hover .nicorub-messages span {
+  display: none;
+}
+.nicoru-button.nicorub-error .nicorub-link:hover + .nicorub-balloon .nicorub-messages span.nicorub-caption,
+.nicoru-button.nicorub-error .nicorub-link:hover .nicorub-messages span.nicorub-caption {
+  display: inline;
+}
+.nicoru-button.nicorub-clicked .nicorub-link:hover + .nicorub-balloon .nicorub-messages span,
+.nicoru-button.nicorub-clicked .nicorub-link:hover .nicorub-messages span,
+.nicoru-button.nicorub-nicoried .nicorub-link:hover + .nicorub-balloon .nicorub-messages span,
+.nicoru-button.nicorub-nicoried .nicorub-link:hover .nicorub-messages span {
+  display: none;
+}
+.nicoru-button.nicorub-clicked .nicorub-link:hover + .nicorub-balloon .nicorub-messages span.nicorub-done,
+.nicoru-button.nicorub-clicked .nicorub-link:hover .nicorub-messages span.nicorub-done,
+.nicoru-button.nicorub-nicoried .nicorub-link:hover + .nicorub-balloon .nicorub-messages span.nicorub-done,
+.nicoru-button.nicorub-nicoried .nicorub-link:hover .nicorub-messages span.nicorub-done {
+  display: inline;
+}
