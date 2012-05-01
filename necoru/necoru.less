@@ -1,6 +1,6 @@
 @import "mixins.less";
 
-.nicoru-button{
+.necoru-button{
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -11,12 +11,12 @@
   cursor: default;
 //  display: none; 
   
-  &.nicorub-loaded {
+  &.necorub-loaded {
     display: -moz-inline-block;
     display: inline-block; 
     }
   
-  .nicorub-link {
+  .necorub-link {
     display: -moz-inline-block;
     display: inline-block;
     text-decoration: none;
@@ -24,10 +24,10 @@
     cursor: pointer; 
     }
     
-  &.nicorub-clicked .nicorub-link, &.nicorub-nicoried .nicorub-link {
+  &.necorub-clicked .necorub-link, &.necorub-nicoried .necorub-link {
     cursor: default; 
     }
-  .nicorub-icon {
+  .necorub-icon {
     display: -moz-inline-block;
     display: inline-block;
     -webkit-transition-property: -webkit-transform;
@@ -47,25 +47,25 @@
     background-position: 0px 0;
     background-repeat: no-repeat; 
     }
-  &.nicorub-error .nicorub-icon {
+  &.necorub-error .necorub-icon {
     background-position: -80px 0; 
     }
-  &.nicorub-clicked .nicorub-icon, &.nicorub-nicoried .nicorub-icon {
+  &.necorub-clicked .necorub-icon, &.necorub-nicoried .necorub-icon {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg); }
-  &.nicorub-nicoried .nicorub-icon {
+  &.necorub-nicoried .necorub-icon {
     background-position: -20px 0; 
     }
-  &.nicorub-rotatefix.nicorub-clicked .nicorub-icon {
+  &.necorub-rotatefix.necorub-clicked .necorub-icon {
     background-position: -40px 0; 
     }
-  &.nicorub-rotatefix.nicorub-nicoried .nicorub-icon {
+  &.necorub-rotatefix.necorub-nicoried .necorub-icon {
     background-position: -60px 0; 
     }
-  .nicorub-balloon {
+  .necorub-balloon {
     display: -moz-inline-block;
     display: inline-block;
     -moz-box-sizing: border-box;
@@ -85,8 +85,8 @@
     color: #333333;
     text-align: center; 
     }
-    .nicorub-balloon .nicorub-u,
-    .nicorub-balloon .nicorub-d {
+    .necorub-balloon .necorub-u,
+    .necorub-balloon .necorub-d {
       position: absolute;
       line-height: 0;
       width: 0;
@@ -97,36 +97,36 @@
       border: 4px transparent solid;
       border-right-color: #888888;
       border-left: 0; }
-    .nicorub-balloon .nicorub-d {
+    .necorub-balloon .necorub-d {
       left: -3px;
       border-right-color: white; }
-  .nicorub-messages {
+  .necorub-messages {
     vertical-align: baseline;
     margin: 0 4px 0; }
-    .nicorub-messages span {
+    .necorub-messages span {
       display: none; }
-    .nicorub-messages span.nicorub-counter {
+    .necorub-messages span.necorub-counter {
       display: inline; }
-  .nicorub-link:hover + .nicorub-balloon .nicorub-messages span,
-  .nicorub-link:hover .nicorub-messages span {
+  .necorub-link:hover + .necorub-balloon .necorub-messages span,
+  .necorub-link:hover .necorub-messages span {
     display: none; }
-  .nicorub-link:hover + .nicorub-balloon .nicorub-messages span.nicorub-caption,
-  .nicorub-link:hover .nicorub-messages span.nicorub-caption {
+  .necorub-link:hover + .necorub-balloon .necorub-messages span.necorub-caption,
+  .necorub-link:hover .necorub-messages span.necorub-caption {
     display: inline; }
-  &.nicorub-error .nicorub-messages span {
+  &.necorub-error .necorub-messages span {
     display: none; }
-  &.nicorub-error .nicorub-messages span.nicorub-failed {
+  &.necorub-error .necorub-messages span.necorub-failed {
     display: inline; }
-  &.nicorub-error .nicorub-link:hover + .nicorub-balloon .nicorub-messages span,
-  &.nicorub-error .nicorub-link:hover .nicorub-messages span {
+  &.necorub-error .necorub-link:hover + .necorub-balloon .necorub-messages span,
+  &.necorub-error .necorub-link:hover .necorub-messages span {
     display: none; }
-  &.nicorub-error .nicorub-link:hover + .nicorub-balloon .nicorub-messages span.nicorub-caption,
-  &.nicorub-error .nicorub-link:hover .nicorub-messages span.nicorub-caption {
+  &.necorub-error .necorub-link:hover + .necorub-balloon .necorub-messages span.necorub-caption,
+  &.necorub-error .necorub-link:hover .necorub-messages span.necorub-caption {
     display: inline; }
-  &.nicorub-clicked .nicorub-link:hover + .nicorub-balloon .nicorub-messages span,
-  &.nicorub-clicked .nicorub-link:hover .nicorub-messages span, &.nicorub-nicoried .nicorub-link:hover + .nicorub-balloon .nicorub-messages span, &.nicorub-nicoried .nicorub-link:hover .nicorub-messages span {
+  &.necorub-clicked .necorub-link:hover + .necorub-balloon .necorub-messages span,
+  &.necorub-clicked .necorub-link:hover .necorub-messages span, &.necorub-nicoried .necorub-link:hover + .necorub-balloon .necorub-messages span, &.necorub-nicoried .necorub-link:hover .necorub-messages span {
     display: none; }
-  &.nicorub-clicked .nicorub-link:hover + .nicorub-balloon .nicorub-messages span.nicorub-done,
-  &.nicorub-clicked .nicorub-link:hover .nicorub-messages span.nicorub-done, &.nicorub-nicoried .nicorub-link:hover + .nicorub-balloon .nicorub-messages span.nicorub-done, &.nicorub-nicoried .nicorub-link:hover .nicorub-messages span.nicorub-done {
+  &.necorub-clicked .necorub-link:hover + .necorub-balloon .necorub-messages span.necorub-done,
+  &.necorub-clicked .necorub-link:hover .necorub-messages span.necorub-done, &.necorub-nicoried .necorub-link:hover + .necorub-balloon .necorub-messages span.necorub-done, &.necorub-nicoried .necorub-link:hover .necorub-messages span.necorub-done {
     display: inline; }
 }

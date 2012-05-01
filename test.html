@@ -4,12 +4,117 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>necoru</title>
     <link href="./necoru/necoru.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <span class="nicoru-button"> <a href="#" class="nicorub-link " rel="like"> <span class="nicorub-icon"></span> <span class="nicorub-balloon"> <span class="nicorub-u"></span> <span class="nicorub-d"></span> <span class="nicorub-messages"> <span class="nicorub-caption">ネコる！</span> <span class="nicorub-done">ネコった！</span> <span class="nicorub-failed">失敗ニャー！</span> <span class="nicorub-counter">0</span> </span> </span></a> </span>
+    <div class="topbar topbar-fixed-top">
+      <div class="topbar-inner">
+        <div class="container">
+          <a class="brand" href="."> <img src="http:/yamitake.github.com/images/logo-mini.png" alt="" /> ネコる！ jqueryプラグイン </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-    <span class="nicoru-button nicorub-clicked"> <a href="#" class="nicorub-link " rel="like"> <span class="nicorub-icon"></span> <span class="nicorub-balloon"> <span class="nicorub-u"></span> <span class="nicorub-d"></span> <span class="nicorub-messages"> <span class="nicorub-caption">ネコる！</span> <span class="nicorub-done">ネコった！</span> <span class="nicorub-failed">失敗ニャー！</span> <span class="nicorub-counter">0</span> </span> </span></a> </span>
+    <div class="container">
+      <h1>jquery.necoru.js</h1>
+      <p>
+        押すと泣きます。
+        決して、
+      </p>
+
+      <h2>demo</h2>
+      <div class="demo">
+        <p>
+          <span id="target"></span>
+        </p>
+      </div>
+
+      <h3>Getting Started</h3>
+      <p>
+        1. cssを読み込む
+        <br />
+        <code>
+          &lt;link href="./necoru/necoru.css" rel="stylesheet" type="text/css" media="all" /&gt;
+        </code>
+      </p>
+      <p>
+        2. jsを読み込む. ※jqueryとjquery.nicoru.jsを読み込む。
+        <br />
+        <code>
+          &lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"&gt;&lt;/script&gt;
+          <br />
+          <br />
+          &lt;script type="text/javascript" src="./necoru/jquery.necoru.js"&gt;&lt;/script&gt;
+        </code>
+      </p>
+      <p>
+        3. jsで初期化する。
+        <span>ボタンを書き出します。</span>
+        <br />
+        <code>
+          &lt;span&gt;&lt;/span&gt;
+          &lt;script type="text/javascript"&gt;
+            $(function() {
+              $("#target").necoru();
+            });
+          &lt;/script&gt;
+        </code>
+        
+        <h4>option</h4>
+        <table class="table">
+          <tr>
+            <th>propety name</th>
+            <th>デフォルト値</th>
+          </tr>
+      audio: true
+          <tr>
+            <td>caption</td>
+            <td>"ネコる！"</td>
+          </tr>
+          <tr>
+            <td>done</td>
+            <td>"ネコった！"</td>
+          </tr>
+          <tr>
+            <td>failed</td>
+            <td>"失敗ニャ"</td>
+          </tr>
+          <tr>
+            <td>counter</td>
+            <td>(乱数)</td>
+          </tr>
+          <tr>
+            <td>audio</td>
+            <td>true</td>
+          </tr>
+        </table>
+      </p>
+
+      <!--
+      <h3>テンプレ</h3>
+      <span class="necoru-button"> <a href="#" class="necorub-link " rel="like"> <span class="necorub-icon"></span> <span class="necorub-balloon"> <span class="necorub-u"></span> <span class="necorub-d"></span> <span class="necorub-messages"> <span class="necorub-caption">ネコる！</span> <span class="necorub-done">ネコった！</span> <span class="necorub-failed">失敗ニャー！</span> <span class="necorub-counter">0</span> </span> </span></a> </span>
+
+      <h3>テンプレ(class="necoru-button necorub-clicked")</h3>
+      <span class="necoru-button necorub-clicked"> <a href="#" class="necorub-link " rel="like"> <span class="necorub-icon"></span> <span class="necorub-balloon"> <span class="necorub-u"></span> <span class="necorub-d"></span> <span class="necorub-messages"> <span class="necorub-caption">ネコる！</span> <span class="necorub-done">ネコった！</span> <span class="necorub-failed">失敗ニャー！</span> <span class="necorub-counter">0</span> </span> </span></a> </span>
+      -->
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./necoru/jquery.necoru.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#target").necoru();
+      });
+    </script>
 
   </body>
 </html>
