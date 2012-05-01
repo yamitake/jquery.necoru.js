@@ -15,132 +15,158 @@
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/yamitake/jquery.necoru.js">View on GitHub</a>
+      <header class="inner">
+        <a id="forkme_banner" href="https://github.com/yamitake/jquery.necoru.js">View on GitHub</a>
 
-          <h1 id="project_title">Jquery.necoru.js</h1>
-          <h2 id="project_tagline">cat is cute.</h2>
+        <h1 id="project_title">Jquery.necoru.js</h1>
+        <h2 id="project_tagline">cat is cute.</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/yamitake/jquery.necoru.js/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/yamitake/jquery.necoru.js/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+        <section id="downloads">
+          <a class="zip_download_link" href="https://github.com/yamitake/jquery.necoru.js/zipball/master">Download this project as a .zip file</a>
+          <a class="tar_download_link" href="https://github.com/yamitake/jquery.necoru.js/tarball/master">Download this project as a tar.gz file</a>
+        </section>
+      </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>Welcome to GitHub Pages.</h3>
+          <span itemscope="" itemref="rectangle" itemtype="http://growbutton.com/ns#button"> <span itemprop="url">http://yamitake.github.com/jquery.nicoru.js/</span> <span itemprop="title">yamitake's github page | jquery.nicoru.js</span> </span>
 
-<p>このプラグインは「ニコる」っぽいネコのボタンを表示する事ができるプラグインです。</p>
-
-<pre><code>$ cd your_repo_root/repo_name
+        <p>
+          このプラグインは「ニコる」っぽいネコのボタンを表示する事ができるプラグインです。
+          <br />
+          ※本品はジョークpluginです。<br />
+        </p>
+        <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages
-</code></pre>
+</code></pre>        
+        
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-      <p>
-        ニコる!ではなにか。<br /><br />
-        <a href="http://info.nicovideo.jp/nicoru/" target="_blank">ニコる！ってなぁに?</a>
-      </p>
 
-      <h2>demo</h2>
-      <div class="demo">
         <p>
-          <span id="target"></span>
-          <span id="target2"></span>
+          If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.
         </p>
-      </div>
 
-      <h3>Getting Started</h3>
-      <p>
-        1. cssを読み込む
-        <br />
-        <code>
-          &lt;link href="./necoru/necoru.css" rel="stylesheet" type="text/css" media="all" /&gt;
-        </code>
-      </p>
-      <p>
-        2. jsを読み込む. ※jqueryとjquery.nicoru.jsを読み込む。
-        <br />
-        <code>
-          &lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"&gt;&lt;/script&gt;
+        <p>
+          ニコる!ではないなにか。
           <br />
           <br />
-          &lt;script type="text/javascript" src="./necoru/jquery.necoru.js"&gt;&lt;/script&gt;
-        </code>
-      </p>
-      <p>
-        3. jsで初期化する。
-        <span>ボタンを書き出します。</span>
-        <br />
-        <code>
-          &lt;span&gt;&lt;/span&gt;
-          &lt;script type="text/javascript"&gt;
-          $(function() {
-          $("#target").necoru();
-          });
-          &lt;/script&gt;
-        </code>
+          <a href="http://info.nicovideo.jp/nicoru/" target="_blank">ニコる！ってなぁに?</a>
+        </p>
 
-        <h4>option</h4>
-        <table class="table">
-          <tr>
-            <th>propety name</th>
-            <th>デフォルト値</th>
-          </tr>
-          <tr>
-            <td>caption</td>
-            <td>"ネコる！"</td>
-          </tr>
-          <tr>
-            <td>done</td>
-            <td>"ネコった！"</td>
-          </tr>
-          <tr>
-            <td>failed</td>
-            <td>"失敗ニャ"</td>
-          </tr>
-          <tr>
-            <td>counter</td>
-            <td>(乱数)</td>
-          </tr>
-        </table>
-      </p>
+        <h2>demo</h2>
+        <div class="demo">
+          <p>
+            <span id="target"></span>
+            <span id="target2"></span>
+          </p>
+        </div>
 
-<h3>Support or Contact</h3>
+        <h3>Getting Started</h3>
+        <p>
+          1. cssを読み込む
+          <br />
+          <code>
+            &lt;link href="./necoru/necoru.css" rel="stylesheet" type="text/css" media="all" /&gt;
+          </code>
+        </p>
+        <p>
+          2. jsを読み込む. ※jqueryとjquery.nicoru.jsを読み込む。
+          <br />
+          <code>
+            &lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"&gt;&lt;/script&gt;
+            <br />
+            <br />
+            &lt;script type="text/javascript" src="./necoru/jquery.necoru.js"&gt;&lt;/script&gt;
+          </code>
+        </p>
+        <p>
+          3. jsで初期化する。
+          <span>ボタンを書き出します。</span>
+          <br />
+          <code>
+            &lt;span&gt;&lt;/span&gt;
+            &lt;script type="text/javascript"&gt;
+            $(function() {
+            $("#target").necoru();
+            });
+            &lt;/script&gt;
+          </code>
 
-<p>twitter on <a href="https://github.com/yamitake" class="user-mention">@yamitake</a></p>
+          <h4>option</h4>
+          <table class="table">
+            <tr>
+              <th>propety name</th>
+              <th>デフォルト値</th>
+            </tr>
+            <tr>
+              <td>caption</td>
+              <td>"ネコる！"</td>
+            </tr>
+            <tr>
+              <td>done</td>
+              <td>"ネコった！"</td>
+            </tr>
+            <tr>
+              <td>failed</td>
+              <td>"失敗ニャ"</td>
+            </tr>
+            <tr>
+              <td>counter</td>
+              <td>(乱数)</td>
+            </tr>
+          </table>
+        </p>
+
+        <h3>Support or Contact</h3>
+
+        <p>
+          twitter on <a href="https://github.com/yamitake" class="user-mention">@yamitake</a>
+        </p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Jquery.necoru.js maintained by <a href="https://github.com/yamitake">yamitake</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p class="copyright">
+          Jquery.necoru.js maintained by <a href="https://github.com/yamitake">yamitake</a>
+        </p>
+        <p>
+          Published with <a href="http://pages.github.com">GitHub Pages</a>
+        </p>
       </footer>
     </div>
+
+    <!-- 事前にAudioタグ読んどく -->
+    <audio id="audio">
+      <source src="nya.mp3" />
+    </audio>
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="./necoru/jquery.necoru.js"></script>
     <script type="text/javascript">
       $(function() {
         $("#target").necoru();
-        
+
         //option指定
-        $("#target2").necoru({caption:"(」・ω・)」うー！" , done:"(／・ω・)／にゃー！"});
+        $("#target2").necoru({
+          caption : "(」・ω・)」うー！",
+          done : "(／・ω・)／にゃー！"
+        });
 
         //押されるとイベントを拾う事ができます。音を鳴らすなどしたい場合に最適です。baai
         $("#target").bind("necoru-clicked", function() {
           //にゃ〜って音声をならしたい。
           console.log("にゃー");
+          document.getElementById("audio").play();
         });
       });
     </script>
-    
-
+    <script type="text/javascript" src="http://growbutton.com/javascripts/button.js?apikey=72e92b20-2eb5-012f-063a-12313f00aced&shape=rectangle&insert=false"></script>
   </body>
 </html>
